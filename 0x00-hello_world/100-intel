@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -m64 $CFILE -o $(echo $CFILE | tr '.c' '.s')
+gcc $CFILE -S -m64 -o $(echo $CFILE | tr '.c' '.s')
