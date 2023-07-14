@@ -6,9 +6,9 @@
   */
 int main(void)
 {
-	int n, m, h;
+	int n = 49, m, h;
 
-	n = m = h = 48;
+	m = h = 48;
 	while (n < 57 && m <= 57 && h < 56)
 	{
 		m++;
