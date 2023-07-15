@@ -1,6 +1,6 @@
 # ALX, low level programming
-### Hello:exclamatin:
----
+### Hello!
+
 Welcome To ALX low level programming repository! This is the second repository of the curriculum. Containts Mostly C programming projects
 and some basic-level shell script. each project comes with a readme file lsiting all project and providing, explainations and insights into
 the solutions implemented, as well as some unpopular concenpts.
