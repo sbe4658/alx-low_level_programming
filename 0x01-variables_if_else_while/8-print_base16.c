@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-  * main - prints all base 16 number 
+  * main - prints all base 16 number
   *
   * Return: 0 Always -> Success
   */
