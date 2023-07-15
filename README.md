@@ -5,6 +5,7 @@ and some basic-level shell script. each project comes with a readme file lsiting
 the solutions implemented, as well as some unpopular concenpts.
 
 ## Projects :
+---
 1. [hello world]( https://github.com/sbe4658/alx-low_level_programming/tree/main/0x00-hello_world "0x00") - This is the first projects provides some really simple c projects, it is fully focused on how to compile a c
 program. *using gcc*
 ---
