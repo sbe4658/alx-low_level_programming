@@ -44,7 +44,7 @@ It contains some shell tasks & c programming tasks.
      ~~~
 #### Function description in betty:
 ---
-writing Description can be tricky and annoying sometimes. when trying to write make sure that you're using `-` to separate the function name and it description, return should always starts with a capital `R`, Here's a small example:
+writing function description can be tricky and annoying sometimes. when trying to write make sure that you're using `-` to separate the function name and it description, return should always starts with a capital `R`, Here's a small example:
 ~~~
 /**
  * main - Does COOL stuff
@@ -54,7 +54,7 @@ writing Description can be tricky and annoying sometimes. when trying to write m
 ~~~
 For mor informations use `man betty`
 
-To make your life using on the [Betty]( "Betty") repository, There's some commands to configure your editor so it can be betty friendly. For [Vim](https://github.com/holbertonschool/Betty/wiki/Tools:-Vim "vi"), [EMACS](https://github.com/holbertonschool/Betty/wiki/Tools:-Emacs "emacs").
+To make your life easy, on the [Betty]( "Betty") repository There's some commands to configure your editor making it betty friendly. For [Vim](https://github.com/holbertonschool/Betty/wiki/Tools:-Vim "vi"), [EMACS](https://github.com/holbertonschool/Betty/wiki/Tools:-Emacs "emacs").
 
 please note that the -s and -c already does the job for you, their output file would be with the extension `.s` and `.o` respectively. it is same as using the `-o $(echo $CFILE | tr '.c' '.o') /* or .s */` the $() is used so anything inside the brackets will an argument for `gcc` on this example read [this]( http://linuxcommand.org/lc3_lts0080.php "expansions").
 ___
