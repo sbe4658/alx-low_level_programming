@@ -23,7 +23,8 @@ int main(void)
 		}
 		if (m == 57 && n == 56)
 		{
-			m = n = ++h;
+			h++;
+			m = n = 1 + h;
 		}
 		if (m == 57)
 		{
