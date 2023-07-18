@@ -1,49 +1,48 @@
 #include <stdio.h>
 /**
-  * main - prints a combination of two-digits number
+  * main - prints all possible combos of two two-digits.
   *
-  * Return: 0 Always -> Success
+  * Return: 0 -> Success
   */
 int main(void)
 {
 	int n, m, h, e;
 
-	h = e = n = m = 48;
-	while (m <= 57)
+	e = h = n = 48;
+	while (m <= 57 && n <= 57 && h < 56 && e <= 57)
 	{
-		putchar(h);
+		m++;
 		putchar(e);
-		putchar(32);
+		putchar(h);
+		putchar(' ');
 		putchar(n);
 		putchar(m);
-		if (h != 57 && e != 56 && n != 57 && m != 57)
+		if (m == 57 && n == 57 && h == 56 && e == 57)
 		{
-			putchar(44);
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
 		if (m == 57)
 		{
 			if (n == 57)
 			{
-				if (e == 57)
+				if (h == 57)
 				{
-					h++;
-					e = 48;
+					m = n = h = e;
+					e++;
 				}
 				else
 				{
-					e++;
-					n = e;
+					m = n = h;
+					h++;
 				}
 			}
 			else
 			{
+				m = n;
 				n++;
-				m = 48;
 			}
 		}
-		else
-			m++;
 	}
 	putchar('\n');
 	return (0);
