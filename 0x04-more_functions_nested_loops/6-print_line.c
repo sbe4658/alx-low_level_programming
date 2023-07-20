@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * prin_line - print n straight lines.
+ * print_line - print n straight lines.
+ * @n: number of lines '_'
  *
  * Return: Nothing.
  */
