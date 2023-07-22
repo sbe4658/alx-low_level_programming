@@ -14,6 +14,21 @@ void times_table(void)
 		while (m <= 9)
 		{
 			nm = n * m;
+			if (n != 0 && nm != 0)
+			{
+				if (nm >= 10)
+					_putchar(' ');
+				else
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+			}
+			else if (m != 0)
+			{
+				_putchar(' ');
+				_putchar(' ');
+			}
 			if (nm >= 10)
 			{
 				_putchar((nm / 10) + 48);
@@ -24,28 +39,7 @@ void times_table(void)
 				_putchar(nm + 48);
 			}
 			if (m != 9)
-			{
-				if (nm < 10)
-				{
-					if (n < 2)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-					}
-					else if (n >= 2 && nm < 8)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-					}
-				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
+				_putchar(',');
 			m++;
 		}
 		m = 0;
