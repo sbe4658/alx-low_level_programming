@@ -9,7 +9,7 @@
 int main(void)
 {
 	int c = 0;
-	long unsigned int n = 0, m = 1, sum;
+	unsigned long int n = 0, m = 1, sum;
 
 	while (c < 50)
 	{
