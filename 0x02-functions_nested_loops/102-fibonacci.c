@@ -11,12 +11,12 @@ int main(void)
 	int c = 0;
 	long unsigned int n = 0, m = 1, sum;
 
-	while (c <= 50)
+	while (c < 50)
 	{
 		sum = n + m;
 		n = m;
 		m = sum;
-		if (c != 50)
+		if (c != 49)
 			printf("%ld, ", sum);
 		else
 			printf("%ld\n", sum);
