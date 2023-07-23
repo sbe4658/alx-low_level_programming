@@ -8,18 +8,19 @@
 
 int main(void)
 {
-	int  c = 0, limit = 4000000, counter = 0;
-	unsigned long int n = 0, m = 1, sum;
+	int  c = 0;
+	unsigned long int n = 0, m = 1, sum, counter = 0, lim = 4000000;
 
-	while (c < limit)
+	sum = 0;
+	while (sum <= lim)
 	{
 		sum = n + m;
 		n = m;
 		m = sum;
 		if (sum % 2 == 0)
-			counter++;
+			counter = counter + sum;
 		c++;
 	}
-	printf("%d\n", counter);
+	printf("%ld\n", counter);
 	return (0);
 }
