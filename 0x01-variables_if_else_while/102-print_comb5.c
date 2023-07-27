@@ -6,44 +6,26 @@
   */
 int main(void)
 {
-	int n, m, h, e;
+	int n = 0, m = 0;
 
-	e = h = n = 48;
-	while (m <= 57 && n <= 57 && h < 56 && e <= 57)
+	while (n < 99 && m <= 99)
 	{
-		m++;
-		putchar(e);
-		putchar(h);
-		putchar(' ');
-		putchar(n);
-		putchar(m);
-		if (m == 57 && n == 57 && h == 56 && e == 57)
+		if (n >= 10)
 		{
-			putchar(',');
-			putchar(' ');
+			_putchar((n / 10) + 48);
+			_putchar((n % 10) + 48);
 		}
-		if (m == 57)
+		else
+			_putchar(n + 48);
+		_putchar(' ');
+		if (m >= 10)
 		{
-			if (n == 57)
-			{
-				if (h == 57)
-				{
-					m = n = h = e;
-					e++;
-				}
-				else
-				{
-					m = n = h;
-					h++;
-				}
-			}
-			else
-			{
-				m = n;
-				n++;
-			}
+			_putchar((m / 10) + 48);
+			_putchar((m % 10) + 48);
 		}
+		else
+			_putchar(m + 48);
+		_putchar(',');
+		_putchar(' ');
 	}
-	putchar('\n');
-	return (0);
 }
