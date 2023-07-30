@@ -14,10 +14,12 @@ void rev_string(char *s)
 	{
 		c++;
 	}
-	while (c--)
+	c--;
+	while (c >= 0)
 	{
-		s[c] = tmp[i];
+		s[i] = tmp[c];
+		c--;
 		i++;
 	}
-	s[i] = '\0';
+	s[c] = '\0';
 }
