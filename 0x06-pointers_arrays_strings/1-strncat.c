@@ -3,6 +3,7 @@
  * _strncat - contaconates two strings with n bytes from the second string.
  * @dest: the first pointer to a string will hold them both.
  * @src: 2nd pointer to a string.
+ * @n: the numeber of bytes from src.
  *
  * Return: A pointer to a string that's holds them both 'dest'.
  */
