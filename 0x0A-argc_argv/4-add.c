@@ -10,7 +10,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 {
 	int n = 0, i;
 
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
 		if (atoi(argv[i]) == 0)
 		{
