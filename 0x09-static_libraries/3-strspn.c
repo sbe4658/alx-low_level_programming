@@ -6,4 +6,8 @@
  *
  * Return: the length, otherwise -1.
  */
-unsigned int _strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept)
+{
+	printf("In progress...\n%s\n%s", s, accept);
+	return (0);
+}
