@@ -10,6 +10,5 @@ int main(__attribute__((unused)) int argc, char **argv)
 {
 	while (argc--)
 		printf("%s\n", *argv++);
-	printf("%s", argv[1]);
 	return (0);
 }
