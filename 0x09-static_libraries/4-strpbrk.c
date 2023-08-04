@@ -6,8 +6,4 @@
  *
  * Return: the length, otherwise -1.
  */
-char *_strpbrk(char *s, char *accept)
-{
-	printf("In progress...\n%s\n%s", accept, s);
-	return (s);
-}
+char *_strpbrk(char *s, char *accept);
