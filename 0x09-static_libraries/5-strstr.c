@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strstr - gets the length of a prefix substring.
- * @s: string.
- * @accept: chars to check s with.
+ * @haystack: string.
+ * @needle: chars to check s with.
  *
  * Return: the length, otherwise -1.
  */
