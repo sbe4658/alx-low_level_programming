@@ -5,6 +5,6 @@
 #include <stdlib.h>
 
 int _putchar(char c);
-int _issymbol(int c);
+int _isdigit(char *s);
 
 #endif
