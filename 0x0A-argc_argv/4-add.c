@@ -23,8 +23,8 @@ int main(__attribute__((unused)) int argc, char **argv)
 	return (0);
 }
 /**
- * _isdigit - checks wether a character is a digit.
- * @c: character.
+ * _isdigit - checks wether string's characters are digits.
+ * @s: a given string.
  *
  * Return: 1 if it is a digit otherwise 0.
  */
