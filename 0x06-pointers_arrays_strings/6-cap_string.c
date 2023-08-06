@@ -12,6 +12,14 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
+		if (i == 0)
+		{
+			if (s[i] <= 'z' && s[i] >= 'a')
+			{
+				c = s[i] - 'a';
+				s[i] = c + 'A';
+			}
+		}
 		csep = 0;
 		while (sep[csep] != '\0')
 		{
