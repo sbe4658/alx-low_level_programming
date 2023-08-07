@@ -10,6 +10,8 @@ char *_strdup(char *str)
 	int i = 0, len = 0;
 	char *dup;
 
+	if (str == NULL)
+		return (NULL);
 	len = _strlen(str) + 1;
 	dup = malloc(sizeof(char) * len);
 	if (dup == NULL)
@@ -31,8 +33,6 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	if (s == NULL)
-		return (0);
 	while (s[len] != '\0')
 		len++;
 	return (len);
