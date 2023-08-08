@@ -4,7 +4,7 @@
  * @s1: First memory address.
  * @s2: Second memory address.
  *
- * Return: a pointer to NEW address in mem that holds them both, 
+ * Return: a pointer to NEW address in mem that holds them both,
  * Otherwise NULL.
  */
 char *str_concat(char *s1, char *s2)
@@ -13,22 +13,26 @@ char *str_concat(char *s1, char *s2)
 	char *cat;
 
 	len = _strnlen(s1, s2);
-	cat = malloc(sizeof(char) * len);
-	if (s1 == NULL || s2 == NULL || cat == NULL)
+	cat = malloc(sizeof(char) * (len + 1));
+	if ((s1 == NULL && s2 == NULL) || cat == NULL)
 		return (NULL);
-	while (len--)
+	if (s1 != NULL)
 	{
-		if (*s1 != '\0')
+		while (*s1 != '\0')
 		{
 			cat[i] = *s1;
 			s1++;
+			i++;
 		}
-		else
+	}
+	if (s2 != NULL)
+	{
+		while (*s2 != '\0')
 		{
 			cat[i] = *s2;
 			s2++;
+			i++;
 		}
-		i++;
 	}
 	return (cat);
 }
@@ -43,11 +47,15 @@ int _strnlen(char *s1, char *s2)
 {
 	int len1 = 0, len2 = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return (0);
-	while (s1[len1] != '\0')
-		len1++;
-	while (s2[len2] != '\0')
-		len2++;
+	if (s1 != NULL)
+	{
+		while (s1[len1] != '\0')
+			len1++;
+	}
+	if (s2 != NULL)
+	{
+		while (s2[len2] != '\0')
+			len2++;
+	}
 	return (len1 + len2);
 }
