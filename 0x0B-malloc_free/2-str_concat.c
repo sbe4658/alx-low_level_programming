@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	if (s2 != NULL)
+	else if (s2 != NULL)
 	{
 		while (*s2 != '\0')
 		{
