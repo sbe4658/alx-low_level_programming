@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	else if (s2 != NULL)
+	if (s2 != NULL)
 	{
 		while (*s2 != '\0')
 		{
@@ -34,10 +34,8 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	else
-	{
+	if (s1 == NULL && s2 == NULL)
 		*cat = '\0';
-	}
 	return (cat);
 }
 /**
