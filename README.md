@@ -13,7 +13,7 @@ program.
 2. [functions, nested loops](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x02-functions_nested_loops "0x02") - Introduction to Functions, function prototypes, header files and nested loops.
 3. [Debugging](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x03-debugging "Debugging") - debugging task.
 4. [more functions, nested loops](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x04-more_functions_nested_loops "0x04") - Related the the previous project same concepts more tasks.
-5. [pointers, arrays, strings](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings "0x05) - the hardest concepts so far covers pointers and their relation withe arrays & strings.
+5. [pointers, arrays, strings](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings "0x05") - the hardest concepts so far covers pointers and their relation withe arrays & strings.
 6. [pointers, arrays, strings](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x06-pointers_arrays_strings "0x06") - more of the same concepts in the previous project.
 7. [pointers, arrays, strings](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x07-pointers_arrays_strings "0x07") - more of the same concept, introduction to 2D arrays or pointer to a pointer.
 8. [recursion](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x08-recursion "0x08") - function that's calls itself.
