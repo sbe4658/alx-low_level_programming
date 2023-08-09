@@ -2,7 +2,7 @@
 
 ### Hello!
 ---
-This is the second project on this repository, it mainly focusing on Variables, if else statements and while loops, Covering:
+This is the second project on this repository, Mainly focusing on Variables, if else statements and while loops, Covering:
  * boolean, Relational, logical and arithmetic operators
  * True and False values in c.
  * Comments
@@ -54,15 +54,15 @@ This is the second project on this repository, it mainly focusing on Variables, 
 
 ### Data types:
 ---
-In c we refer to keywords to the words that's c have reserved, `if...else` for example. identifiers, In the other hand are words reserve they're mainly variables. naming cruel (Betty) there's some limitaions (i.e: the limit 31 charecter, can be longer but only 31 charecters that are gonna be checked for equality, there's even more limit for portability due to the linker's limitations), To ensure the portability naming in betty-style have some rules firstly you always have to be brief in naming use `tmp` not `thisIsTemporary`, this is not the case always, don't 'foo' to name a function the rule is simple make your name readable and small, if your function do somthing it name should be in that context this will save you the documenting time and will encrease the readability of your ptogram.
+In c we refer to the words that's c have reserved by `keywords`, `if...else` for example is a keyword. In the other hand, Identifiers are words we reserve or name like variables. naming in C is cruel (let's not forget about the beast Betty) and limited (i.e: the limit 31 charecter, can be longer but only 31 charecters are going to be checked for equality, there's even more limit for portability due to the linker's limitations), To ensure the portability naming, betty-style have some naming rules. firstly you always have to be brief in naming, for example instead of using `thisIsTemporary` use `tmp`, this is not always the case, `foo` is not a valid function name. the rule is simple make your name readable and small, function name should be in the context of what the function or what's for.
 
-In C, there's various types of data we have `char`: charecters (0 - 127), `int`: intigers (-2000000000 - +2,000,000,000, it depends on the machine you're using) and more. lets talk about integral types first, `int` is the most basic one which can hold a whole number, there's also `signed int` a bit simillar to int, can hold a positive and negative number, the positive numbers holds them the 'unsigned int` type.
-`char` is also considered an integral type, since it holds values from 0 - 127 which are the values of symbols and charecters in ascii (i.e: numbers of base 10 have their own values (48 - 57) to store a negative number you need to use signed char).
+In C, there's various types of data. For example integral types, we have `char`: charecters (0 - 127), `int`: intigers (-2000000001 to +2000000000, it depends on the machine you're using). `int` is the most basic one which can hold a whole number, there's also `signed int` a bit simillar to int, can hold a positive and negative number, the positive numbers holds them the 'unsigned int` type.
+let's talk more about `char`s, since it holds values from 0 - 127 which are the values of symbols and charecters in ascii (i.e: numbers of base 10 have their own values (48 - 57), to store a negative number you need to use signed char), do letters and symbols are just a integers.
 
 **printf** have various options to prints these types `%d` for `int` values and `%c` for `char` values.
 
 ## other:
-As i previously said numbers have its own ascii value and considered chars, so that's on some putchar tasks i user 48 - 57, you can use '0' - '9' this will make it easier and more readable but alwyas double check that you're protecting them using single quote, otherwise. when using if or while loop you'll be comparing two diffrent number.
+As i previously said numbers have their own ascii value and considered chars, that's why on some putchar tasks i user 48 - 57, you can use '0' - '9' this will make it easier and more readable but alwyas double check that you're protecting them using single quote, otherwise. when using if or while loop you'll be comparing two diffrent number.
 for example:
 ~~~
 int main(void)
@@ -84,9 +84,12 @@ the output:
 ~~~
 salek@HP-Ubuntu:~$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 101-print_comb4.c -o 101-print_comb4
 salek@HP-Ubuntu:~$ ./101-print_comb4
-012, 013, 014, 015, 016, 017, 018, 019, 023, 024, 025, 026, 027, 028, 029, 034, 035, 036, 037, 038, 039, 045, 046, 047, 048, 049, 056, 057, 058, 059, 067, 068, 069, 078, 079, 089, 212, 213, 214, 215, 216, 217, 218, 219, 223, 224, 225, 226, 227, 228, 229, 234, 235, 236, 237, 238, 239, 245, 246, 247, 248, 249, 256, 257, 258, 259, 267, 268, 269, 278, 279, 289, 434, 435, 436, 437, 438, 439, 445, 446, 447, 448, 449, 456, 457, 458, 459, 467, 468, 469, 478, 479, 489, 656, 657, 658, 659, 667, 668, 669, 678, 679, 689,
-salek@HP-Ubuntu:~$https://github.com/sbe4658/alx-low_level_programming/commit/6522756e925bc343d3eff64d9afed641db586db6
+012, 013, 014, 015, 016, 017, 018, 019, 023, 024, 025, 026, 027, 028, 029, 034, 035, 036, 037, 038, 039, 045, 046, 047, 048, 049, 056, 057,
+058, 059, 067, 068, 069, 078, 079, 089, 212, 213, 214, 215, 216, 217, 218, 219, 223, 224, 225, 226, 227, 228, 229, 234, 235, 236, 237, 238,
+239, 245, 246, 247, 248, 249, 256, 257, 258, 259, 267, 268, 269, 278, 279, 289, 434, 435, 436, 437, 438, 439, 445, 446, 447, 448, 449, 456,
+457, 458, 459, 467, 468, 469, 478, 479, 489, 656, 657, 658, 659, 667, 668, 669, 678, 679, 689,
+salek@HP-Ubuntu:~$
 ~~~
 like i was saying on `089, 212` h icremented two times (the first two) and n holds the value of h before the second increment, same thing for m. this is happenning because of the the post-increment `++` simply put, it is assigning the the first variable before = to the value of the variable before incrementing. to solve this issue we have to use pre-encrements operator, in this example `n = m = ++h` this will give our variables `n` and `m` the value of `h` incremented, but this will cause a problem since both increments operators will the value of `h`. To be safe i used 'n = m = 1 + h`.
 ___
-Kimba is Watching :lion:. [Twitter](https://twitter.com/xSALINKOx "twitter"), Email: salekbenelhabchi@gmail.com.
+Kimba is Watching :lion:. [Twitter](https://twitter.com/MrBread46 "twitter"), Email: salekbenelhabchi@gmail.com.
