@@ -1,6 +1,6 @@
 # C, Variables, If, else, while
 
-### Hello!
+### Learning Objectives
 ---
 This is the second project on this repository, Mainly focusing on Variables, if else statements and while loops, Covering:
  * boolean, Relational, logical and arithmetic operators
