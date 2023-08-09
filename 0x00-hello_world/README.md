@@ -1,12 +1,12 @@
 # Hello, World
-### Hello, World!
+
 Welcome to the first c projects is an introduction to c programming. it is covering:
  * Compilation process.
  * How to use `gcc` to compile c program, pointing out most of it options.
  * Printing text using `printf`, `puts` and `putchar`.
  * getting the size of a specific type using `sizeof`.
  * Betty-style
-It contains some shell tasks & c programming tasks.
+It contains mostly shell tasks & c programming tasks.
 
 ## Tasks:
 
@@ -32,8 +32,8 @@ It contains some shell tasks & c programming tasks.
  3. **Assemnling** - Converts assembly code to machine readable code
  4. **Linking** - links libraries with their functions (all of them are in machine readable code).
 ### Betty-style:
- betty coding is style is way to write c programs in way that is easy to read and not over-documenting your code
- betty hates:
+`Betty style` is a coding style mainly for increasing the readability and reducing over-documenting the script or the code.
+### Important guidlines:
   * spaces always use TAB at the beginnig of a line
   * comments in betty are:
    * `/* comment */`
@@ -44,18 +44,19 @@ It contains some shell tasks & c programming tasks.
      ~~~
 #### Function description in betty:
 ---
-writing function description can be tricky and annoying sometimes. when trying to write make sure that you're using `-` to separate the function name and it description, return should always starts with a capital `R`, Here's a small example:
+writing function description following betty-style & betty-document, can be tricky and annoying sometimes. the first thing is the name and the description make sure you're using `-` to separate the function name and the description. function parameters/arguments should start with `@`. the return should always starts with a capital `R`, Here's a small example:
 ~~~
 /**
- * main - Does COOL stuff
+ * main - check the code \o/.
+ * @argument: function argument description.
  *
- * Return: 0 Always -> Success
+ * Return: 0 Always -> Success.
  */
 ~~~
 For mor informations use `man betty`
 
-To make your life easy, on the [Betty]( "Betty") repository There's some commands to configure your editor making it betty friendly. For [Vim](https://github.com/holbertonschool/Betty/wiki/Tools:-Vim "vi"), [EMACS](https://github.com/holbertonschool/Betty/wiki/Tools:-Emacs "emacs").
+To make your life easy, on the [Betty]( "Betty") repository There's some commands to configure your editor making it `betty friendly`. For [Vim](https://github.com/holbertonschool/Betty/wiki/Tools:-Vim "vi"), [EMACS](https://github.com/holbertonschool/Betty/wiki/Tools:-Emacs "emacs").
 
-please note that the -s and -c already does the job for you, their output file would be with the extension `.s` and `.o` respectively. it is same as using the `-o $(echo $CFILE | tr '.c' '.o') /* or .s */` the $() is used to tell the shell that anything inside the brackets will be an argument for `gcc` for this example. More about expansions read [this]( http://linuxcommand.org/lc3_lts0080.php "expansions").
+please note that the -s and -c already does the job for you, their output file would be with the extension `.s` and `.o` respectively. it is same as using the `-o $(echo $CFILE | tr '.c' '.o') /* or .s */` the $() is used to tell shell that anything inside the brackets will be an argument for `gcc` in this example. More about expansions read [this]( http://linuxcommand.org/lc3_lts0080.php "expansions").
 ___
 Kimba is watching :lion:. Email: salekbenelhabchi@gmail.com
