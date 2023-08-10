@@ -8,7 +8,6 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
 	void *tmp;
 
 	tmp = malloc(size * nmemb);
@@ -24,9 +23,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  *
  * Return: the same address nut value set to 0.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset_to_0(char *s, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 		s[i] = '\0';
