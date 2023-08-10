@@ -9,5 +9,6 @@ char *string_nconcat(char *, char *, unsigned int);
 int _strlen(char *);
 void *_calloc(unsigned int, unsigned int);
 char *_memset_to_0(char *, unsigned int);
+int *array_range(int, int);
 
 #endif
