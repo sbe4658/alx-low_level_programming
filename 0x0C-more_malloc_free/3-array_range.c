@@ -21,7 +21,7 @@ int *array_range(int min, int max)
 	}
 	if (min != max)
 	{
-		for (i = 0; c <= max; i++)
+		for (i = 0; min <= max; i++)
 		{
 			a[i] = min;
 			min++;
