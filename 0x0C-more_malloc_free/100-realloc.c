@@ -34,6 +34,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
  * @dest: Destination string.
  * @src: source string (a pointer to an address in mem technically
  * same for dest
+ * @n: The number of bytes to be copied.
  *
  * Return: dest withe copied bytes.
  */
