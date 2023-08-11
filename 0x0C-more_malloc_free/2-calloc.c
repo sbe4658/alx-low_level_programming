@@ -12,7 +12,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	tmp = malloc(size * nmemb);
 	if (tmp == NULL || size == 0 || nmemb == 0)
+	{
+		free(tmp);
 		return (NULL);
+	}
 	_memset_to_0(tmp, size * nmemb);
 	return (tmp);
 }
