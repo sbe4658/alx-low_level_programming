@@ -22,6 +22,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			free(ptr);
 			return (NULL);
 		}
+		_memset_0(ptr, new_size);
 	}
 	else
 		holder = malloc(new_size);
@@ -55,4 +56,19 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	for (i = 0; i < n; i++)
 		dest[i] = src[i];
 	return (dest);
+}
+/**
+ * _memset_0 - sets a block of memory to 0.
+ * @str: pointer to a memory address.
+ * @n: is the number of bytes to set to 0.
+ *
+ * Return: str initialized to 0.
+ */
+char *_memset_0(char *str, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		str[i] = '\0';
+	return (str);
 }

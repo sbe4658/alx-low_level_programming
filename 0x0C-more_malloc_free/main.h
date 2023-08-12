@@ -12,5 +12,6 @@ char *_memset_to_0(char *, unsigned int);
 int *array_range(int, int);
 void *_realloc(void *, unsigned int, unsigned int);
 char *_memcpy(char *, char *, unsigned int);
+char *_memset_0(char *, unsigned int);
 
 #endif
