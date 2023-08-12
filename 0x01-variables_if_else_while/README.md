@@ -50,7 +50,7 @@ This is the second project on this repository, Mainly focusing on Variables, if 
 ---
  * Logical operators : `&&`: AND, `||`: OR, `!`: NOT.
  * Relational operators: `==`: equales to, `!=`: the oppisite of `==`, `>`: Greater than, `<`: less than, `>=`: greater than or equal, `<=`: less than or equal.
- * Boolean operator: simply put, they're expression that result in a boolean value (true or false). Therfore, you can use to create a condition for if...else statements and loops. (i.e: True = 1, and False = 2).
+ * Boolean operator: simply put, they're expression that result in a boolean value (true or false). Therfore, you can use them to create a condition for if...else statements and loops. (i.e: True = 1, and False = 0).
 
 ### Data types:
 ---
