@@ -20,6 +20,8 @@ struct dog
 
 /* Function section */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *);
+void check_for_null(struct dog *);
 
 /* Headers section */
 #include <stdlib.h>
