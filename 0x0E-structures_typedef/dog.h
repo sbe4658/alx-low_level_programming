@@ -18,5 +18,11 @@ struct dog
 	char *owner;
 };
 
+/* Function section */
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
+/* Headers section */
+#include <stdlib.h>
+#include <stdio.h>
 
 #endif
