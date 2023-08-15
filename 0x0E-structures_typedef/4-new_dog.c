@@ -9,23 +9,16 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dawg = malloc(sizeof(dog_t));
+	dog_t *dawg;
 	char *n, *o;
-	int len1, len2;
 
-	if (dawg == NULL)
+	dawg = malloc(sizeof(dog_t));
+	n = malloc(sizeof(char) * (_strlen(name) + 1));
+	o = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (dawg == NULL || n == NULL || o == NULL)
 	{
-		free(dawg);
-		return (NULL);
-	}
-	len1 = _strlen(name);
-	n = malloc(sizeof(char) * len1);
-	len2 = _strlen(owner);
-	o = malloc(sizeof(char) * len2);
-	if (n == NULL || o == NULL)
-	{
-		free(dawg->name);
-		free(dawg->owner);
+		free(n);
+		free(o);
 		free(dawg);
 		return (NULL);
 	}
