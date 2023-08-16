@@ -13,6 +13,10 @@ void print_name_as_is(char *name);
 void array_iterator(int *array, size_t size, void (*action)(int));
 void print_elem_hex(int);
 void print_elem(int);
+int abs_is_98(int);
+int is_98(int);
+int is_strictly(int);
+int int_index(int *array, int size, int (*cmp)(int));
 
 
 #endif
