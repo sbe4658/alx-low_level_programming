@@ -4,6 +4,7 @@
 /* Header's sectio */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* Fonction's section */
 int op_add(int, int);
