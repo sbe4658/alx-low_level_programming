@@ -1,1 +1,1 @@
-# 0x0F-function_pointer
+# 0x0F, function pointers.
