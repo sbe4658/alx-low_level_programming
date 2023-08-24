@@ -1,12 +1,9 @@
-/* Header's section */
-#include <stdio.h>
-#include <stdlib.h>
-
 #ifndef LISTS_H
 #define LISTS_H
 
-/* function's section */
-size_t print_list(const list_t *h);
+/* Header's section */
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct list_s - singly linked list.
@@ -22,5 +19,8 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
+
+/* function's section */
+size_t print_list(const list_t *h);
 
 #endif
