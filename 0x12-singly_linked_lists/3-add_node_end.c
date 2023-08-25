@@ -1,13 +1,13 @@
 #include "lists.h"
 #include <string.h>
 /**
- * add_node - adds a node at the beginning of a linked list.
- * @head: the old head of list_t list.
+ * add_node_end - adds a node at the end of a linked list.
+ * @head: the head of list_t list.
  * @str: a struct member.
  *
  * Return: a pointer the Head of list_t list.
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *tmp, *h = (*head);
 
