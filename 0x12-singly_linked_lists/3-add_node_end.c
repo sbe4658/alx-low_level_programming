@@ -9,22 +9,25 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *tmp;
+	list_t *tmp, *h = (*head);
 
 	tmp = malloc(sizeof(list_t));
 	if (tmp == NULL)
 		return (NULL);
+
 	tmp->str =  strdup(str);
 	tmp->len = _strlen(str);
 	tmp->next = NULL;
-	if (*head == NULL)
-		*head = tmp;
-	else
+	if ((*head) == NULL)
 	{
-		tmp->next = *head;
 		(*head) = tmp;
+		return (*head);
 	}
-	return (*head);
+	while (h->next != NULL)
+		h = h->next;
+
+	h->next = tmp;
+	return (tmp);
 }
 /**
  * _strlen - computes the length of s.
@@ -41,5 +44,6 @@ int _strlen(const char *s)
 		while (*(s++))
 			len++;
 	}
+
 	return (len);
 }
