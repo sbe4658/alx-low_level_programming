@@ -9,8 +9,9 @@ main:
 	lea rdi, [print]
 	call printf
 
-	mov rsp, rbp
-	pop rbp
-	ret
+	push rax
+	mov rax, 0
+	leave
+	ret 
 SECTION .data
 	print: db "Hello, Holberton",10,0
