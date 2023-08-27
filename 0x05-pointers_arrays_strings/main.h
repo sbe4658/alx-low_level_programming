@@ -14,5 +14,8 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *);
+int _isdigit(char);
+int whonum(int);
+int _strdlen(char *s);
 
 #endif
