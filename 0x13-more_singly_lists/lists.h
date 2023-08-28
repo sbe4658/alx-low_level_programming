@@ -19,6 +19,11 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/**
+ * ui_t - new unsigned int type.
+ */
+typedef unsigned int ui_t;
 /* Function's section*/
+size_t print_listint(const listint_t *);
 
 #endif
