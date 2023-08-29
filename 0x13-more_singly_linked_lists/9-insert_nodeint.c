@@ -7,7 +7,7 @@
  *
  * Return: The address of the new node. or NULL.
  */
-listint_t *insert_nodeint_at_index(listint_t **head, ui_t idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	ui_t i;
 	listint_t *h, *tmp;
