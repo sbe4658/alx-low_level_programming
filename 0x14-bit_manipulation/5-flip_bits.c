@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * flip_bit - computes the number of needed to get from m to n.
+ * flip_bits - computes the number of needed to get from m to n.
  * @n: first number.
  * @m: second number.
  *
