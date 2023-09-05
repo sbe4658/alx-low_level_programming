@@ -17,13 +17,13 @@ void rdwr(int fd_from, char *txt, int fd_to, char *f_from, char *f_to)
 		b = read(fd_from, txt, 1024);
 		if (b == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s\n", f_from);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f_from);
 			exit(98);
 		}
 		w = write(fd_to, txt, b);
 		if (w == -1)
 		{
-			dprintf(2, "Error: Can't write to %s\n", f_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
 			exit(99);
 		}
 	} while (b > 0);
@@ -43,7 +43,7 @@ void close_files(int fd1, int fd2)
 	m = close(fd2);
 	if (n == -1 || m == -1)
 	{
-		dprintf(2, "Error: Can't close fd %i\n", (n == -1 ? fd1 : fd2));
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", (n == -1 ? fd1 : fd2));
 		exit(100);
 	}
 }
@@ -61,20 +61,20 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fd_from = open(av[1], O_RDONLY);
 	text = malloc(sizeof(char) * 1024);
 	if (fd_from == -1 || !text)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (fd_to == -1)
 	{
-		dprintf(2, "Error: Can't write to %s\n", av[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
 	rdwr(fd_from, text, fd_to, av[1], av[2]);
