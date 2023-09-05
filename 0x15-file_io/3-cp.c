@@ -13,20 +13,23 @@ void rdwr(int fd_from, char *txt, int fd_to, char *f_from, char *f_to)
 {
 	ssize_t b, w = 0;
 
-	do {
-		b = read(fd_from, txt, 1024);
-		if (b == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f_from);
-			exit(98);
-		}
-		w = write(fd_to, txt, b);
-		if (w == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
-			exit(99);
-		}
-	} while (b > 0);
+	if (read(fd_from, txt, 1024) > 0)
+	{
+		do {
+			b = read(fd_from, txt, 1024);
+			if (b == -1)
+			{
+				dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f_from);
+				exit(98);
+			}
+			w = write(fd_to, txt, b);
+			if (w == -1)
+			{
+				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
+				exit(99);
+			}
+		} while (b > 0);
+	}
 }
 /**
  * close_files - closes 2 file descriptors.
