@@ -20,7 +20,7 @@ void rdwr(int fd_from, char *txt, int fd_to, char *f_from, char *f_to)
 			dprintf(2, "Error: Can't read from file %s\n", f_from);
 			exit(98);
 		}
-		write(fd_to, txt, b);
+		w = write(fd_to, txt, b);
 		if (w == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", f_to);
@@ -65,7 +65,7 @@ int main(int ac, char **av)
 		exit(97);
 	}
 	fd_from = open(av[1], O_RDONLY);
-	text = malloc(sizeof(char) * 1024);
+	text = malloc(sizeof(char) * 3000);
 	if (fd_from == -1 || !text)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
