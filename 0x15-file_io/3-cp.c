@@ -5,7 +5,7 @@
  * @fd_to: to this fd.
  * @txt: buffer.
  * @f_from: the name of the read file.
- * @f_to: the name of the wrote file.
+ * @f_to: the name of the file to write to.
  *
  * Return: Nothing.
  */
@@ -52,12 +52,12 @@ void close_files(int fd1, int fd2)
  * @ac: argument count.
  * @av: argument vector; contains the args passed as strings.
  *
- * Return: On success 0, on error a number that greater than 0.
+ * Return: On success 0, on error a number that is greater than 0.
  */
 int main(int ac, char **av)
 {
 	int fd_from, fd_to;
-	char *text;
+	char text[1024];
 
 	if (ac != 3)
 	{
@@ -65,13 +65,12 @@ int main(int ac, char **av)
 		exit(97);
 	}
 	fd_from = open(av[1], O_RDONLY);
-	text = malloc(sizeof(char) * 1024);
-	if (fd_from == -1 || !text)
+	if (fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	fd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
@@ -79,6 +78,5 @@ int main(int ac, char **av)
 	}
 	rdwr(fd_from, text, fd_to, av[1], av[2]);
 	close_files(fd_from, fd_to);
-	free(text);
 	return (0);
 }
