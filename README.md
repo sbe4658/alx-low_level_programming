@@ -28,11 +28,10 @@ program.
 19. [More, singly linked lists](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists "0x13") - More of data structures.
 20. [Bit manipulation](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x14-bit_manipulation "0x14") - Bitwise operations.
 21. [File I/O](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x15-file_io "0x15") - File handling in C.
----
 ## Next Month Projects
-0. [Doubly linked lists]( "Coming soon!") - Data structures.
-1. [Dynamic libraries]( "Coming soon!") - Creating dynamic libraries.
-2. [Hash tables]( "Coming soon!") - Hash tables.
+0. [Doubly linked lists](https://github.com/sbe4658/alx-low_level_programming    /tree/main/0x16-doubly_linked_lists "0x16") - Data structures.
+1. [Dynamic libraries](https://github.com/sbe4658/alx-low_level_programming    /tree/main/0x17-Dynamic_libraries "0x17") - Creating dynamic libraries.
+2. [Hash tables](https://github.com/sbe4658/alx-low_level_programming    /tree/main/0x18-hash_tables "0x18") - Hash tables.
 ___
 This repository is a part of ALX Software engineering program. Please do **NOT** copy/paste my solutions "Do Hard Things!".
 Kimba is watching :lion:.
