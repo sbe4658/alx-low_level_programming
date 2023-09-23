@@ -30,8 +30,8 @@ program.
 21. [File I/O](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x15-file_io "0x15") - File handling in C.
 ## Next Month Projects
 0. [Doubly linked lists](https://github.com/sbe4658/alx-low_level_programming    "0x16") - Data structures.
-1. [Dynamic libraries](https://github.com/sbe4658/alx-low_level_programming    "0x17") - Creating dynamic libraries.
-2. [Hash tables](https://github.com/sbe4658/alx-low_level_programming    /tree"0x18") - Hash tables.
+1. [Dynamic libraries](https://github.com/sbe4658/alx-low_level_programming "0x17") - Creating dynamic libraries.
+2. [Hash tables](https://github.com/sbe4658/alx-low_level_programming "0x18") - Hash tables.
 ___
 This repository is a part of ALX Software engineering program. Please do **NOT** copy/paste my solutions "Do Hard Things!".
 Kimba is watching :lion:.
