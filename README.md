@@ -1,11 +1,9 @@
 # ALX, low level programming
-### Hello!
 Welcome To ALX low level programming repository! This is the second repository of the curriculum. Containts Mostly C programming projects
 and some basic-level shell script. each project comes with a readme file lsiting all project and providing, explainations and insights into
 the solutions implemented, as well as some unpopular concenpts.
 
 ## Projects :
----
 0. [hello world]( https://github.com/sbe4658/alx-low_level_programming/tree/main/0x00-hello_world "0x00") - This is the first projects provides some really simple c projects, it is fully focused on how to compile a c
 program.
 
@@ -19,8 +17,23 @@ program.
 8. [recursion](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x08-recursion "0x08") - function that's calls itself.
 9. [static libraries](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x09-static_libraries "0x09") - static libraries.
 10. [argv & argc](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0A-argc_argv "0x0A") - the main function arguments.
-11. [malloc, free](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0B-malloc_free "0x0B") - allocating and freeing memory dynamically.
+11. [malloc, free](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0B-malloc_free "0x0B") - dynamic memory management.
+12. [more malloc, free](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0C-more_malloc_free "0x0C") - Dynamic memory management.
+13. [Preprocessor](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0D-preprocessor "0x0D") - Using Macros.
+14. [Structure, typedef](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0E-structures_typedef "0x0E") - Introduction to structures in C.
+15. [Function's pointers](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x0F-function_pointers "0x0F") - Using function pointers.
+16. [Variadic functions](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x10-variadic_functions "0x10") - Function that take variable number of arguments.
+17. [printf](https://github.com/sbe4658/printf "0x11") - Team project for creating a printf clone.
+18. [Singly linked lists](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x12-sigly_linked_lists "0x12") - Data structure introduction.
+19. [More, singly linked lists](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists "0x13") - More of data structures.
+20. [Bit manipulation](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x14-bit_manipulation "0x14") - Bitwise operations.
+21. [File I/O](https://github.com/sbe4658/alx-low_level_programming/tree/main/0x15-file_io "0x15") - File handling in C.
+---
+## Next Month Projects
+0. [Doubly linked lists]( "Coming soon!") - Data structures.
+1. [Dynamic libraries]( "Coming soon!") - Creating dynamic libraries.
+2. [Hash tables]( "Coming soon!") - Hash tables.
 ___
 This repository is a part of ALX Software engineering program. Please do **NOT** copy/paste my solutions "Do Hard Things!".
 Kimba is watching :lion:.
-Question? reach me on [Twitter](https://twitter.com/MrBread46 "twitter") or salekbenelhabchi@gmail.com.
+Question? reach me on [Twitter](https://twitter.com/MrBread46 "twitter") or <a href="mailto:salekbenelhabchi@gmail.com">email</a>.
