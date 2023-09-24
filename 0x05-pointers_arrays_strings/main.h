@@ -17,5 +17,6 @@ int _atoi(char *);
 int _isdigit(char);
 int whonum(int);
 int _strdlen(char *s);
+int _isnegative(char *);
 
 #endif

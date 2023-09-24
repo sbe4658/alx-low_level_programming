@@ -26,7 +26,7 @@ int _atoi(char *s)
 	{
 		for (i = 0; s[i]; i++)
 		{
-			if (_isdigit(s[i + 1]) == 1 && s[i] == '-')
+			if (_isnegative(s))
 			{
 				tmp = -tmp;
 				break;
@@ -85,4 +85,26 @@ int whonum(int i)
 		i--;
 	}
 	return (dec);
+}
+/**
+ * _isnegative - checks whether a string has a negative number.
+ * @s: A given string.
+ *
+ * Return: 1 if negative, 0 if not.
+ */
+int _isnegative(char *s)
+{
+	int i, n = 0;
+
+	for (i = 0; s[i]; i++)
+	{
+		if (s[i] == '-')
+		{
+			n++;
+		}
+	}
+	if ((n % 2))
+		return (1);
+	return (0);
+
 }
