@@ -5,7 +5,7 @@
  *
  * Return: Nothing.
  */
-int print_number(int n)
+void print_number(int n)
 {
 	int s, dec = 1, tmp = 0;
 
