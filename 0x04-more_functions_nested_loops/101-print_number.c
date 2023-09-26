@@ -12,6 +12,8 @@ void print_number(int n)
 	s = snum(n);
 	if (n < 0)
 		_putchar('-');
+	if (n == 0)
+		_putchar('0');
 	for (; s; s--)
 	{
 		dec = indig(s - 1);
