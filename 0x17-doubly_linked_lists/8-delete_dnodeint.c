@@ -8,7 +8,7 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, int index)
 {
-	dlisint_t *tmp, *h = *head;
+	dlistint_t *tmp, *h = *head;
 
 	if (h)
 	{
@@ -26,8 +26,8 @@ int delete_dnodeint_at_index(dlistint_t **head, int index)
 		}
 		else
 		{
-			(*h) = (*h)->next;
-			(*h)->prev = NULL;
+			(*head) = (*head)->next;
+			(*head)->prev = NULL;
 		}
 	}
 	free(h);
