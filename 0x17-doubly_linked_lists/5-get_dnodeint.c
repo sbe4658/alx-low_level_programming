@@ -9,8 +9,10 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *h, unsigned int idx)
 {
 	for (; idx; idx--)
+	{
 		if (!h)
 			return (NULL);
 		h = h->next;
+	}
 	return (h);
 }
