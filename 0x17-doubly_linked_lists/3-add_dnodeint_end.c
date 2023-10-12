@@ -20,6 +20,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **h, const int n)
 		while (tmp->next)
 			tmp = tmp->next;
 		ltmp->prev = tmp;
+		tmp->next = ltmp;
 	}
 	else
 	{
