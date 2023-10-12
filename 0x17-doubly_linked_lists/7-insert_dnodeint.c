@@ -7,7 +7,7 @@
  *
  * Return: The address of the inserted node.
  */
-dlistint_t *insert_dnodeint_at_index(dlistint **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *tmp = *h, *ltmp;
 
