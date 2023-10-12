@@ -24,5 +24,6 @@ size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **h, const int n);
 dlistint_t *add_dnodeint_end(dlistint_t **h, const int n);
 void free_dlistint(dlistint_t *h);
+dlistint_t *get_dnodeint_at_index(dlistint_t *h, unsigned int idx);
 
 #endif
