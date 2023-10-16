@@ -18,7 +18,7 @@ int printf(char *str, ...)
  * @fd: file descriptor.
  * @str: string.
  *
- * Return: the number of chars.
+ * Return: Same here lol.
  */
 int dprintf(int fd, char *str, ...)
 {
