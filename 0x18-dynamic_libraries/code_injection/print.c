@@ -9,9 +9,9 @@
  */
 int printf(char *str, ...)
 {
-	write(1, "--> Please make me win!\n", 24);
+	write(1, "ongratulations, you win the Jackpot!\n", 38);
 	exit(0);
-	return (24);
+	return (38);
 }
 /**
  * dprintf - print to file descriptor.
@@ -23,7 +23,7 @@ int printf(char *str, ...)
 int dprintf(int fd, char *str, ...)
 {
 	fd = 1;
-	write(fd, "--> Please make me win!", 24);
+	write(fd, "ongratulations, you win the Jackpot!\n", 38);
 	exit(0);
-	return (24);
+	return (38);
 }
