@@ -9,7 +9,7 @@
  */
 int printf(char *str, ...)
 {
-	write(1, "ongratulations, you win the Jackpot!\n", 38);
+	write(1, "Congratulations, you win the Jackpot!\n", 38);
 	exit(0);
 	return (38);
 }
@@ -23,7 +23,7 @@ int printf(char *str, ...)
 int dprintf(int fd, char *str, ...)
 {
 	fd = 1;
-	write(fd, "ongratulations, you win the Jackpot!\n", 38);
+	write(fd, "Congratulations, you win the Jackpot!\n", 38);
 	exit(0);
 	return (38);
 }
