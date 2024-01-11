@@ -30,5 +30,6 @@ dlistint_t *add_dnodeint(dlistint_t **, const int);
 dlistint_t *add_dnodeint_end(dlistint_t **, const int);
 void free_dlistint(dlistint_t *);
 dlistint_t *get_dnodeint_at_index(dlistint_t *, u_int);
+int sum_dlistint(dlistint_t *);
 
 #endif
