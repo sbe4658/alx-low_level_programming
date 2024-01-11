@@ -10,9 +10,9 @@ int delete_dnodeint_at_index(dlistint_t **head, u_int index)
 {
 	dlistint_t *curr = *head;
 
-	if (idx)
+	if (index)
 	{
-		for (; curr; idx--)
+		for (; curr; index--)
 		{
 			if (!curr)
 				return (-1);
