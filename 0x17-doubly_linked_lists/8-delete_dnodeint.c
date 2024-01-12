@@ -12,7 +12,7 @@ int delete_dnodeint_at_index(dlistint_t **head, u_int index)
 
 	if (index)
 	{
-		for (; curr; index--)
+		for (; index; index--)
 		{
 			if (!curr)
 				return (-1);
