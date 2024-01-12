@@ -18,8 +18,13 @@ int delete_dnodeint_at_index(dlistint_t **head, u_int index)
 				return (-1);
 			curr = curr->next;
 		}
-		curr->next->prev = curr->prev;
-		curr->prev->next = curr->next;
+		if (curr->next)
+		{
+			curr->next->prev = curr->prev;
+			curr->prev->next = curr->next;
+		}
+		else
+			curr->prev->next = NULL;
 		free(curr);
 	}
 	else
