@@ -10,25 +10,28 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned int index = 0;
-	hash_node_t *new, *position;
+	hash_node_t *new, **position, *tmp;
 
 	if (!key)
 		return (0);
 	index = key_index((unsigned char *)key, ht->size);
-	position = ht->array[index];
+	position = &(ht->array[index]);
 	new = malloc(sizeof(hash_node_t));
 	if (!new)
 		return (0);
 	new->key = strdup(key);
 	new->value = strdup(value);
 	new->next = NULL;
-	if (position)
+	if (*position)
 	{
-		while (position->next)
-			position = position->next;
-		position->next = new;
+		tmp = *position;
+		printf("before the loop\n");
+		while (tmp->next)
+			tmp = tmp->next;
+		printf("after the loop\n");
+		tmp->next = new;
 	}
 	else
-		position = new;
+		*position = new;
 	return (1);
 }
