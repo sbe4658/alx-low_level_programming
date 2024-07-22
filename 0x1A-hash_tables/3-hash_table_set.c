@@ -16,19 +16,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	index = key_index((unsigned char *)key, ht->size);
 	position = &(ht->array[index]);
+	tmp = *position;
 	new = malloc(sizeof(hash_node_t));
 	if (!new)
 		return (0);
 	new->key = strdup(key);
 	new->value = strdup(value);
 	new->next = NULL;
-	if (*position)
+	if (tmp)
 	{
 		tmp = *position;
-		printf("before the loop\n");
 		while (tmp->next)
 			tmp = tmp->next;
-		printf("after the loop\n");
 		tmp->next = new;
 	}
 	else
