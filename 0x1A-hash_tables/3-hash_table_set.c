@@ -10,27 +10,19 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned int index = 0;
-	hash_node_t *new, **position, *tmp;
+	hash_node_t *new, **position;
 
 	if (!key)
 		return (0);
 	index = key_index((unsigned char *)key, ht->size);
 	position = &(ht->array[index]);
-	tmp = *position;
 	new = malloc(sizeof(hash_node_t));
 	if (!new)
 		return (0);
 	new->key = strdup(key);
 	new->value = strdup(value);
 	new->next = NULL;
-	if (tmp)
-	{
-		tmp = *position;
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = new;
-	}
-	else
-		*position = new;
+	new->next = *position;
+	*position = new;
 	return (1);
 }
